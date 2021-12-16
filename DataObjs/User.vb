@@ -1,8 +1,8 @@
 ﻿Public Class Usuario
-    Public FirstName As String
-    Public LastName As String
-    Public Password As String
-    Public Rol As String
+    Public Property FirstName As String
+    Public Property LastName As String
+    Public Property Password As String
+    Public Property Rol As String
 
 
 
@@ -10,8 +10,9 @@
 
 End Class
 Public Enum RolUsuario
-    Admin
-    User
+    admin
+    user
+    superadmin
 End Enum
 
 

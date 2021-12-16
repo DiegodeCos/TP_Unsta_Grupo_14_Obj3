@@ -159,8 +159,7 @@ Public Class database
     End Function
 
     Public Function GetData(ByVal _CourseID) As DataObjs.Course
-        Dim salida As Boolean
-        Dim salidaDato As New DataObjs.Course
+        Dim salidaDato As DataObjs.Course
         _lastMSG = ""
 
         If Conectar() Then
@@ -180,6 +179,7 @@ Public Class database
                 datar = cmd.ExecuteReader()
                 If datar.HasRows Then
                     datar.Read()
+                    salidaDato = New DataObjs.Course
 
                     salidaDato.Activo = datar.Item("Activo")
                     salidaDato.Courseid = datar.Item("Courseid")
@@ -190,18 +190,12 @@ Public Class database
                     salidaDato.Precio = datar.Item("Precio")
 
                 End If
-
-                'Parse DetData
-
-                salida = True
                 Desconectar()
             Catch ex As Exception
-                salida = False
+                Desconectar()
                 _lastMSG = ex.Message
             End Try
-
         End If
-
 
         Return salidaDato
     End Function

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Rewrite;
 using Microsoft.EntityFrameworkCore;
@@ -9,8 +10,6 @@ using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 
 var builder = Microsoft.AspNetCore.Builder.WebApplication.CreateBuilder(args);
-
-
 
 #region "AUTENTICACION POR AZURE AD"
 builder.Services
@@ -86,6 +85,8 @@ builder.WebHost.ConfigureKestrel(
 
 var app = builder.Build();
 
+app.UseExceptionHandler("/error");
+
 if (app.Environment.IsDevelopment())
 {
     #region "SWAGGER"
@@ -106,21 +107,18 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-
-
-app.MapGet("api/admin/altaUsr", (HttpContext context, GraphServiceClient graphServiceClient) =>
+#region "Administracion de Usuarios"
+app.MapPost("api/admin/altaUsr/{myUser}", (DataObjs.Usuario myUser,  GraphServiceClient graphServiceClient) =>
 {
     try
-    {
-        StreamReader sr = new StreamReader(context.Request.Body);
-        DataObjs.Usuario myUser = JsonConvert.DeserializeObject<DataObjs.Usuario>(sr.ReadToEnd());
-
+    {   
+        //Verificar permiso Admin
         var user = new User
         {
             AccountEnabled = true,
             DisplayName = $"{System.Text.Json.JsonNamingPolicy.CamelCase.ConvertName(myUser.FirstName + myUser.LastName.First())}",
             MailNickname = $"{myUser.FirstName}{myUser.LastName.First()}",
-            UserPrincipalName = $"{myUser.FirstName}.{myUser.LastName}@{  builder.Configuration["ConnectionStrings:Courses"]  }",
+            UserPrincipalName = $"{myUser.FirstName}.{myUser.LastName}@{  builder.Configuration["MyDomain"]  }",
             PasswordProfile = new PasswordProfile
             {
                 ForceChangePasswordNextSignIn = false,
@@ -141,44 +139,25 @@ app.MapGet("api/admin/altaUsr", (HttpContext context, GraphServiceClient graphSe
         return Results.StatusCode(StatusCodes.Status500InternalServerError);
     }
 });
-
-
-
+#endregion
 
 #region "COURSES"
 #region "GET"
 // Lista los usuarios activos
 app.MapGet("api/course", () =>
 {
-
     try
     {
         Logica.CourseOps operaciones = new Logica.CourseOps(builder.Configuration["MyCXSQL.String"]);
         var courses = operaciones.Listar();
 
-        return Results.Ok(courses);
-    }
-    catch (Exception ex)
-    {
-        return Results.StatusCode(StatusCodes.Status500InternalServerError);
-    }
-});
-
-app.MapGet("api/course/{id}", (HttpContext context, String id) =>
-{
-    try
-    {
-    
-        if (long.TryParse(id, out long courseID))
+        if (courses != null)
         {
-            Logica.CourseOps operaciones = new Logica.CourseOps(builder.Configuration["MyCXSQL.String"]);
-            var courses = operaciones.Buscar(courseID);
-
             return Results.Ok(courses);
         }
         else
         {
-            return Results.StatusCode(StatusCodes.Status500InternalServerError);
+            return Results.StatusCode(StatusCodes.Status404NotFound);
         }
     }
     catch (Exception ex)
@@ -187,25 +166,43 @@ app.MapGet("api/course/{id}", (HttpContext context, String id) =>
     }
 });
 
+app.MapGet("api/course/{id}", (long  id) =>
+{
+    try
+    {
+        Logica.CourseOps operaciones = new Logica.CourseOps(builder.Configuration["MyCXSQL.String"]);
+        var course = operaciones.Buscar(id);
+
+        if (course != null)
+        {
+            return Results.Ok(course);
+        }
+        else
+        {
+            return Results.StatusCode(StatusCodes.Status404NotFound);
+        }
+    }
+    catch (Exception ex)
+    {
+        return Results.StatusCode(StatusCodes.Status500InternalServerError);
+    }
+});
 #endregion
 
-#region "POST"
+#region "POST - Alta"
 //Alta 
-app.MapPost("api/course", (HttpContext context) =>
+app.MapPost("api/course/{course}", (DataObjs.Course course) =>
 {
     try
     {
-        StreamReader sr = new StreamReader(context.Request.Body);
-        DataObjs.Course data = JsonConvert.DeserializeObject<DataObjs.Course>(sr.ReadToEnd());
-
         Logica.CourseOps operaciones = new Logica.CourseOps(builder.Configuration["MyCXSQL.String"]);
-        if (operaciones.Agregar(data))
+        if (operaciones.Agregar(course))
         {
             return Results.StatusCode(StatusCodes.Status201Created);
         }
         else
         {
-            return Results.StatusCode(StatusCodes.Status500InternalServerError);
+            return Results.StatusCode(StatusCodes.Status404NotFound);
         }
     }
     catch (Exception ex)
@@ -213,25 +210,21 @@ app.MapPost("api/course", (HttpContext context) =>
         return Results.StatusCode(StatusCodes.Status500InternalServerError);
     }
 });
-
 #endregion
 
-#region "PUT"
-app.MapPut("api/course", (HttpContext context) =>
+#region "PUT - Update"
+app.MapPut("api/course/{course}", (DataObjs.Course course) =>
 {
     try
     {
-        StreamReader sr = new StreamReader(context.Request.Body);
-        DataObjs.Course data = JsonConvert.DeserializeObject<DataObjs.Course>(sr.ReadToEnd());
-
         Logica.CourseOps operaciones = new Logica.CourseOps(builder.Configuration["MyCXSQL.String"]);
-        if (operaciones.Actualizar(data))
+        if (operaciones.Actualizar(course))
         {
-            return Results.StatusCode(StatusCodes.Status201Created);
+            return Results.StatusCode(StatusCodes.Status202Accepted);
         }
         else
         {
-            return Results.StatusCode(StatusCodes.Status500InternalServerError);
+            return Results.StatusCode(StatusCodes.Status404NotFound);
         }
     }
     catch (Exception ex)
@@ -242,22 +235,20 @@ app.MapPut("api/course", (HttpContext context) =>
 #endregion
 
 #region "DEL"
-app.MapDelete("api/course/{id}", (HttpContext context) =>
+app.MapDelete("api/course/{id}", (long id) =>
 {
     try
     {
-        StreamReader sr = new StreamReader(context.Request.Body);
-        String data = JsonConvert.DeserializeObject<String>(sr.ReadToEnd());
-        if (long.TryParse(data, out long courseID))
-        {
-            Logica.CourseOps operaciones = new Logica.CourseOps(builder.Configuration["MyCXSQL.String"]);
-            var courses = operaciones.Borrar(courseID);
+        Logica.CourseOps operaciones = new Logica.CourseOps(builder.Configuration["MyCXSQL.String"]);
+        var courses = operaciones.Borrar(id);
 
-            return Results.Ok(courses);
+        if (courses)
+        {
+            return Results.StatusCode(StatusCodes.Status200OK);
         }
         else
         {
-            return Results.StatusCode(StatusCodes.Status500InternalServerError);
+            return Results.StatusCode(StatusCodes.Status404NotFound );
         }
     }
     catch (Exception ex)
@@ -268,6 +259,25 @@ app.MapDelete("api/course/{id}", (HttpContext context) =>
 #endregion
 #endregion
 
-
+#region "Mapeo Captura de Errores"
+app.Map("error", (HttpContext context) =>
+{
+    try
+    {
+        var exceptionHandlerFeature = context.Features.Get<IExceptionHandlerFeature>()!;
+        var err = ((Microsoft.AspNetCore.Http.BadHttpRequestException)((Microsoft.AspNetCore.Diagnostics.ExceptionHandlerFeature)exceptionHandlerFeature).Error);
+        if (err.StatusCode == StatusCodes.Status400BadRequest)
+        {
+            // return Results.Problem(new ProblemDetails { Detail = (err.InnerException != null) ? err.InnerException.Message : err.Message, Status = err.StatusCode });
+            return Results.StatusCode(StatusCodes.Status500InternalServerError);
+        }
+        return Results.StatusCode(err.StatusCode);
+    }
+    catch
+    {
+        return Results.StatusCode(StatusCodes.Status500InternalServerError);
+    }
+});
+#endregion
 
 app.Run();

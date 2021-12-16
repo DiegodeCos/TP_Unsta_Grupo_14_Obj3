@@ -236,3 +236,6 @@ C:\Users\ry12633\Desktop\_Temp\BackUp V2\WebAPI\obj\Debug\net6.0\WebAPI.dll
 C:\Users\ry12633\Desktop\_Temp\BackUp V2\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
 C:\Users\ry12633\Desktop\_Temp\BackUp V2\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\ry12633\Desktop\_Temp\BackUp V2\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
+C:\Users\ry12633\Desktop\_Temp\BackUp V2\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\ry12633\Desktop\_Temp\BackUp V2\WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ry12633\Desktop\_Temp\BackUp V2\WebAPI\bin\Debug\net6.0\System.Text.Json.dll

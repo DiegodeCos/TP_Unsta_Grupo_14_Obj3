@@ -194,6 +194,21 @@
           "lib/net5.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.Azure.ActiveDirectory.GraphClient/2.1.1": {
         "type": "package",
         "dependencies": {
@@ -384,6 +399,19 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Relational/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.1",
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
         "type": "package",
         "build": {
@@ -423,10 +451,10 @@
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
         }
       },
-      "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
+      "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "5.0.0"
+          "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
@@ -557,15 +585,15 @@
           "lib/netstandard2.0/Microsoft.Graph.dll": {}
         }
       },
-      "Microsoft.Graph.Core/2.0.6": {
+      "Microsoft.Graph.Core/2.0.7": {
         "type": "package",
         "dependencies": {
           "Azure.Core": "1.21.0",
           "Microsoft.Identity.Client": "4.39.0",
-          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.14.1",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.15.0",
           "System.Diagnostics.DiagnosticSource": "4.7.1",
           "System.Security.Claims": "4.3.0",
-          "System.Text.Json": "6.0.0"
+          "System.Text.Json": "6.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Graph.Core.dll": {}
@@ -1347,7 +1375,7 @@
           }
         }
       },
-      "System.Text.Json/6.0.0": {
+      "System.Text.Json/6.0.1": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
@@ -1703,6 +1731,21 @@
         "microsoft.aspnetcore.dataprotection.abstractions.nuspec"
       ]
     },
+    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.1": {
+      "sha512": "5hwndB69/GUWfFcBBhR5UGpbPSPzkMu83PnkJjJgYLtwLnvhREMA5ca2XPoZK4Va1o6EtuNMBAfc/3zENkYLYQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.xml",
+        "microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.1.nupkg.sha512",
+        "microsoft.aspnetcore.diagnostics.entityframeworkcore.nuspec"
+      ]
+    },
     "Microsoft.Azure.ActiveDirectory.GraphClient/2.1.1": {
       "sha512": "zA45jFvXnqZxauy5N7McsRbGtamKq3JqpndyUcdJ7TFKnWEfpWAIDUYaqSjSgXF6gdKkU2wiCnWJgSnloUFQIw==",
       "type": "package",
@@ -2003,6 +2046,20 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.Relational/6.0.1": {
+      "sha512": "abaCEEeeB0xlMYDD+m9kmhQh5aipJ5s3UbyQVBfMaZeCiZHXST0eWuJRX63E3e7K/mju5WEHiybV/hizng7q/w==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.relational/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.xml",
+        "microsoft.entityframeworkcore.relational.6.0.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.nuspec"
+      ]
+    },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "sha512": "LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
       "type": "package",
@@ -2068,10 +2125,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
-      "sha512": "ETjSBHMp3OAZ4HxGQYpwyGsD8Sw5FegQXphi0rpoGMT74S4+I2mm7XJEswwn59XAaKOzC15oDSOWEE8SzDCd6Q==",
+    "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
+      "sha512": "qWzV9o+ZRWq+pGm+1dF+R7qTgTYoXvbyowRoBxQJGfqTpqDun2eteerjRQhq5PQ/14S+lqto3Ft4gYaRyl4rdQ==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.abstractions/5.0.0",
+      "path": "microsoft.extensions.configuration.abstractions/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2082,10 +2139,9 @@
         "lib/net461/Microsoft.Extensions.Configuration.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
-        "microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
         "microsoft.extensions.configuration.abstractions.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.Extensions.DependencyInjection/6.0.0": {
@@ -2315,10 +2371,10 @@
         "microsoft.graph.nuspec"
       ]
     },
-    "Microsoft.Graph.Core/2.0.6": {
-      "sha512": "p5ou6CG+gEc/i04GB7xifzaURuaF6PydqFCBzkyt78CKg/JmKi3Ogd1bjDPKXDydCvH29z801dNhd/oKKl2HAg==",
+    "Microsoft.Graph.Core/2.0.7": {
+      "sha512": "y4bzwuuuiEh+nBDnzVfLmLOmg97ekGbCSLTfQtcXNnIj86afp5oqcZroEXv6XTpBcfwoZDq8Y1EGz1q+WWeC/A==",
       "type": "package",
-      "path": "microsoft.graph.core/2.0.6",
+      "path": "microsoft.graph.core/2.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2333,7 +2389,7 @@
         "lib/xamarinios10/Microsoft.Graph.Core.xml",
         "lib/xamarinmac20/Microsoft.Graph.Core.dll",
         "lib/xamarinmac20/Microsoft.Graph.Core.xml",
-        "microsoft.graph.core.2.0.6.nupkg.sha512",
+        "microsoft.graph.core.2.0.7.nupkg.sha512",
         "microsoft.graph.core.nuspec"
       ]
     },
@@ -4335,10 +4391,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Text.Json/6.0.0": {
-      "sha512": "zaJsHfESQvJ11vbXnNlkrR46IaMULk/gHxYsJphzSF+07kTjPHv+Oc14w6QEOfo3Q4hqLJgStUaYB9DBl0TmWg==",
+    "System.Text.Json/6.0.1": {
+      "sha512": "X3cTdM+jna1YyfTUzToW7aVgINFv7R1W4+1+3hua/YCyLjApPoR8fd+2Cep9DbfYjbv+rBx4K6dlmAWEJr9AHg==",
       "type": "package",
-      "path": "system.text.json/6.0.0",
+      "path": "system.text.json/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4384,7 +4440,7 @@
         "lib/netcoreapp3.1/System.Text.Json.xml",
         "lib/netstandard2.0/System.Text.Json.dll",
         "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.6.0.0.nupkg.sha512",
+        "system.text.json.6.0.1.nupkg.sha512",
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -4537,10 +4593,11 @@
       "Logica >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.1",
       "Microsoft.AspNetCore.Authentication.OpenIdConnect >= 6.0.1",
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.1",
       "Microsoft.Azure.ActiveDirectory.GraphClient >= 2.1.1",
       "Microsoft.EntityFrameworkCore >= 6.0.1",
       "Microsoft.Graph >= 4.12.0",
-      "Microsoft.Graph.Core >= 2.0.6",
+      "Microsoft.Graph.Core >= 2.0.7",
       "Microsoft.Identity.Web >= 1.21.1",
       "Microsoft.Identity.Web.MicrosoftGraph >= 1.21.1",
       "Newtonsoft.Json >= 13.0.1",
@@ -4605,6 +4662,10 @@
             "target": "Package",
             "version": "[6.0.1, )"
           },
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.1, )"
+          },
           "Microsoft.Azure.ActiveDirectory.GraphClient": {
             "target": "Package",
             "version": "[2.1.1, )"
@@ -4619,7 +4680,7 @@
           },
           "Microsoft.Graph.Core": {
             "target": "Package",
-            "version": "[2.0.6, )"
+            "version": "[2.0.7, )"
           },
           "Microsoft.Identity.Web": {
             "target": "Package",

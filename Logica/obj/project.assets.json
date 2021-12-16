@@ -890,11 +890,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\WebAPI\\Logica\\Logica.vbproj",
+      "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\Logica\\Logica.vbproj",
       "projectName": "Logica",
-      "projectPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\Logica\\Logica.vbproj",
+      "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\Logica\\Logica.vbproj",
       "packagesPath": "C:\\Users\\ry12633\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\Logica\\obj\\",
+      "outputPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\Logica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -914,11 +914,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataAxs\\DataAxs.vbproj": {
-              "projectPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataAxs\\DataAxs.vbproj"
+            "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataAxs\\DataAxs.vbproj": {
+              "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataAxs\\DataAxs.vbproj"
             },
-            "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj": {
-              "projectPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj"
+            "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj": {
+              "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj"
             }
           }
         }

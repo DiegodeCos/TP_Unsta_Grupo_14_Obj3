@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataAxs\\DataAxs.vbproj": {}
+    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataAxs\\DataAxs.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataAxs\\DataAxs.vbproj": {
+    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataAxs\\DataAxs.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataAxs\\DataAxs.vbproj",
+        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataAxs\\DataAxs.vbproj",
         "projectName": "DataAxs",
-        "projectPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataAxs\\DataAxs.vbproj",
+        "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataAxs\\DataAxs.vbproj",
         "packagesPath": "C:\\Users\\ry12633\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataAxs\\obj\\",
+        "outputPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataAxs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj": {
-                "projectPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj"
+              "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj": {
+                "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj"
               }
             }
           }
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj": {
+    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj",
+        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj",
         "projectName": "DataObjs",
-        "projectPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj",
+        "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj",
         "packagesPath": "C:\\Users\\ry12633\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\obj\\",
+        "outputPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

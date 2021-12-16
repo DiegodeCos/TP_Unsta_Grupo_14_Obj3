@@ -32,7 +32,7 @@ builder.Services.AddAuthorization(
         options
             .AddPolicy(
                 "AdminOnly",
-                policy => policy.RequireRole("Admin")
+                policy => policy.RequireRole("admin")
             );
 
     });
@@ -108,7 +108,7 @@ app.MapControllers();
 
 
 
-app.MapGet("api/admin/altaUsr", (HttpContext context) =>
+app.MapGet("api/admin/altaUsr", (HttpContext context, GraphServiceClient graphServiceClient) =>
 {
     try
     {
@@ -129,9 +129,9 @@ app.MapGet("api/admin/altaUsr", (HttpContext context) =>
         };
 
         //Dar de alta el usuario
-        //User = await _graphServiceClient.Users
-        //           .Request()
-        //           .AddAsync(user)
+        var User = graphServiceClient.Users
+                   .Request()
+                   .AddAsync(user).GetAwaiter().GetResult();
 
 
         return Results.StatusCode(StatusCodes.Status201Created);
@@ -150,7 +150,7 @@ app.MapGet("api/admin/altaUsr", (HttpContext context) =>
 // Lista los usuarios activos
 app.MapGet("api/course", () =>
 {
-    int sasa = 1;
+
     try
     {
         Logica.CourseOps operaciones = new Logica.CourseOps(builder.Configuration["MyCXSQL.String"]);
@@ -164,13 +164,12 @@ app.MapGet("api/course", () =>
     }
 });
 
-app.MapGet("api/course/{id}", (HttpContext context) =>
+app.MapGet("api/course/{id}", (HttpContext context, String id) =>
 {
     try
     {
-        StreamReader sr = new StreamReader(context.Request.Body);
-        String data = JsonConvert.DeserializeObject<String>(sr.ReadToEnd());
-        if (long.TryParse(data, out long courseID))
+    
+        if (long.TryParse(id, out long courseID))
         {
             Logica.CourseOps operaciones = new Logica.CourseOps(builder.Configuration["MyCXSQL.String"]);
             var courses = operaciones.Buscar(courseID);

@@ -18,3 +18,13 @@ C:\Users\ry12633\Desktop\WebAPI\DataObjs\obj\Debug\netcoreapp3.1\DataObjs.Assemb
 C:\Users\ry12633\Desktop\WebAPI\DataObjs\obj\Debug\netcoreapp3.1\DataObjs.vbproj.CoreCompileInputs.cache
 C:\Users\ry12633\Desktop\WebAPI\DataObjs\obj\Debug\netcoreapp3.1\DataObjs.dll
 C:\Users\ry12633\Desktop\WebAPI\DataObjs\obj\Debug\netcoreapp3.1\DataObjs.pdb
+C:\Users\ry12633\Desktop\_Temp\BackUp V2\DataObjs\bin\Debug\netcoreapp3.1\DataObjs.deps.json
+C:\Users\ry12633\Desktop\_Temp\BackUp V2\DataObjs\bin\Debug\netcoreapp3.1\DataObjs.dll
+C:\Users\ry12633\Desktop\_Temp\BackUp V2\DataObjs\bin\Debug\netcoreapp3.1\DataObjs.pdb
+C:\Users\ry12633\Desktop\_Temp\BackUp V2\DataObjs\obj\Debug\netcoreapp3.1\DataObjs.vbproj.AssemblyReference.cache
+C:\Users\ry12633\Desktop\_Temp\BackUp V2\DataObjs\obj\Debug\netcoreapp3.1\DataObjs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ry12633\Desktop\_Temp\BackUp V2\DataObjs\obj\Debug\netcoreapp3.1\DataObjs.AssemblyInfoInputs.cache
+C:\Users\ry12633\Desktop\_Temp\BackUp V2\DataObjs\obj\Debug\netcoreapp3.1\DataObjs.AssemblyInfo.vb
+C:\Users\ry12633\Desktop\_Temp\BackUp V2\DataObjs\obj\Debug\netcoreapp3.1\DataObjs.vbproj.CoreCompileInputs.cache
+C:\Users\ry12633\Desktop\_Temp\BackUp V2\DataObjs\obj\Debug\netcoreapp3.1\DataObjs.dll
+C:\Users\ry12633\Desktop\_Temp\BackUp V2\DataObjs\obj\Debug\netcoreapp3.1\DataObjs.pdb

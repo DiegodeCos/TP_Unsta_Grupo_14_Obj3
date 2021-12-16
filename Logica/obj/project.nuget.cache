@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1PCpo/PWXibl4grW5l2OBpL4+8DiE9V+qo475q9xlAtkOZVfYYnmZJ6JpDpMHujcJybdOw0xEJhnNwBA7wWitQ==",
+  "dgSpecHash": "FUTPnra1Bo+m+DQ3nM04vRa5UGeOzrvRALXnsLS9Klt/ZQZ2NDg2X4J77iSyBF7pjInMWxd6HdSscTHHHCuw6Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\Logica\\Logica.vbproj",
+  "projectFilePath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\Logica\\Logica.vbproj",
   "expectedPackageFiles": [
     "C:\\Users\\ry12633\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\ry12633\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",

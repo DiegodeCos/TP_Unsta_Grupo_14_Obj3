@@ -1,0 +1,30 @@
+C:\Users\ry12633\Desktop\Escritorio Diego\___ TP 3 __\WebAPI\Logica\bin\Debug\netcoreapp3.1\Logica.deps.json
+C:\Users\ry12633\Desktop\Escritorio Diego\___ TP 3 __\WebAPI\Logica\bin\Debug\netcoreapp3.1\Logica.dll
+C:\Users\ry12633\Desktop\Escritorio Diego\___ TP 3 __\WebAPI\Logica\bin\Debug\netcoreapp3.1\Logica.pdb
+C:\Users\ry12633\Desktop\Escritorio Diego\___ TP 3 __\WebAPI\Logica\bin\Debug\netcoreapp3.1\DataAxs.dll
+C:\Users\ry12633\Desktop\Escritorio Diego\___ TP 3 __\WebAPI\Logica\bin\Debug\netcoreapp3.1\DataObjs.dll
+C:\Users\ry12633\Desktop\Escritorio Diego\___ TP 3 __\WebAPI\Logica\bin\Debug\netcoreapp3.1\DataAxs.pdb
+C:\Users\ry12633\Desktop\Escritorio Diego\___ TP 3 __\WebAPI\Logica\bin\Debug\netcoreapp3.1\DataObjs.pdb
+C:\Users\ry12633\Desktop\Escritorio Diego\___ TP 3 __\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.vbproj.AssemblyReference.cache
+C:\Users\ry12633\Desktop\Escritorio Diego\___ TP 3 __\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ry12633\Desktop\Escritorio Diego\___ TP 3 __\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.AssemblyInfoInputs.cache
+C:\Users\ry12633\Desktop\Escritorio Diego\___ TP 3 __\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.AssemblyInfo.vb
+C:\Users\ry12633\Desktop\Escritorio Diego\___ TP 3 __\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.vbproj.CoreCompileInputs.cache
+C:\Users\ry12633\Desktop\Escritorio Diego\___ TP 3 __\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.vbproj.CopyComplete
+C:\Users\ry12633\Desktop\Escritorio Diego\___ TP 3 __\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.dll
+C:\Users\ry12633\Desktop\Escritorio Diego\___ TP 3 __\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.pdb
+C:\Users\ry12633\Desktop\WebAPI\Logica\bin\Debug\netcoreapp3.1\Logica.deps.json
+C:\Users\ry12633\Desktop\WebAPI\Logica\bin\Debug\netcoreapp3.1\Logica.dll
+C:\Users\ry12633\Desktop\WebAPI\Logica\bin\Debug\netcoreapp3.1\Logica.pdb
+C:\Users\ry12633\Desktop\WebAPI\Logica\bin\Debug\netcoreapp3.1\DataAxs.dll
+C:\Users\ry12633\Desktop\WebAPI\Logica\bin\Debug\netcoreapp3.1\DataObjs.dll
+C:\Users\ry12633\Desktop\WebAPI\Logica\bin\Debug\netcoreapp3.1\DataAxs.pdb
+C:\Users\ry12633\Desktop\WebAPI\Logica\bin\Debug\netcoreapp3.1\DataObjs.pdb
+C:\Users\ry12633\Desktop\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.vbproj.AssemblyReference.cache
+C:\Users\ry12633\Desktop\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ry12633\Desktop\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.AssemblyInfoInputs.cache
+C:\Users\ry12633\Desktop\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.AssemblyInfo.vb
+C:\Users\ry12633\Desktop\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.vbproj.CoreCompileInputs.cache
+C:\Users\ry12633\Desktop\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.vbproj.CopyComplete
+C:\Users\ry12633\Desktop\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.dll
+C:\Users\ry12633\Desktop\WebAPI\Logica\obj\Debug\netcoreapp3.1\Logica.pdb

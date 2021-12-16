@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Logica</RootNamespace>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAxs\DataAxs.vbproj" />
+    <ProjectReference Include="..\DataObjs\DataObjs.vbproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,305 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ry12633\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataAxs\\DataAxs.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataAxs\\DataAxs.vbproj",
+        "projectName": "DataAxs",
+        "projectPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataAxs\\DataAxs.vbproj",
+        "packagesPath": "C:\\Users\\ry12633\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataAxs\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ry12633\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj": {
+                "projectPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.27, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj",
+        "projectName": "DataObjs",
+        "projectPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj",
+        "packagesPath": "C:\\Users\\ry12633\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ry12633\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ry12633\\Desktop\\WebAPI\\Logica\\Logica.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\WebAPI\\Logica\\Logica.vbproj",
+        "projectName": "Logica",
+        "projectPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\Logica\\Logica.vbproj",
+        "packagesPath": "C:\\Users\\ry12633\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\Logica\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ry12633\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataAxs\\DataAxs.vbproj": {
+                "projectPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataAxs\\DataAxs.vbproj"
+              },
+              "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj": {
+                "projectPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ry12633\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj",
+        "projectName": "WebAPI",
+        "projectPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj",
+        "packagesPath": "C:\\Users\\ry12633\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\WebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ry12633\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj": {
+                "projectPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\DataObjs\\DataObjs.vbproj"
+              },
+              "C:\\Users\\ry12633\\Desktop\\WebAPI\\Logica\\Logica.vbproj": {
+                "projectPath": "C:\\Users\\ry12633\\Desktop\\WebAPI\\Logica\\Logica.vbproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Azure.ActiveDirectory.GraphClient": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Graph": {
+              "target": "Package",
+              "version": "[4.12.0, )"
+            },
+            "Microsoft.Graph.Core": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            },
+            "Microsoft.Identity.Web": {
+              "target": "Package",
+              "version": "[1.21.1, )"
+            },
+            "Microsoft.Identity.Web.MicrosoftGraph": {
+              "target": "Package",
+              "version": "[1.21.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

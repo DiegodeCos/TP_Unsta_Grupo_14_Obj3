@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mqRovJduhv2xZfhCFWkQbs/NQJAGIXl1XDzv+YS/VPUIPebPT0SCSOfUqy5OuLiaGcv575KtPwHaIYZpPhe0xg==",
+  "dgSpecHash": "0JCCcgTFJkO1yfCZE+MBw1o9khv3v0ogD5nlPXlC4aIjjA1v8M314To7Osk0sdPJH5Dd2QT7QzlfnN8P+X2iIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataAxs\\DataAxs.vbproj",
+  "projectFilePath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataAxs\\DataAxs.vbproj",
   "expectedPackageFiles": [
     "C:\\Users\\ry12633\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\ry12633\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",

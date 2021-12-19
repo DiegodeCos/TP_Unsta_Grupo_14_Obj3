@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj": {}
+    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataObjs\\DataObjs.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj": {
+    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataObjs\\DataObjs.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj",
+        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataObjs\\DataObjs.vbproj",
         "projectName": "DataObjs",
-        "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj",
+        "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataObjs\\DataObjs.vbproj",
         "packagesPath": "C:\\Users\\ry12633\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\obj\\",
+        "outputPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataObjs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -40,6 +40,7 @@ builder.Services.AddAuthorization(
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
+
 #region "SWAGGER"
 builder.Services.AddSwaggerGen(setup =>
 {
@@ -108,8 +109,13 @@ app.UseAuthorization();
 app.MapControllers();
 
 #region "Administracion de Usuarios"
-app.MapPost("api/admin/altaUsr/{myUser}", (DataObjs.Usuario myUser,  GraphServiceClient graphServiceClient) =>
+app.MapPost("api/admin/altaUsr/{myUser}", (DataObjs.Usuario myUser , HttpContext context,  GraphServiceClient graphServiceClient) =>
 {
+    if (!context.User.IsInRole("admin_sec"))
+    {
+        return Results.StatusCode(StatusCodes.Status401Unauthorized);
+    }
+
     try
     {   
         //Verificar permiso Admin
@@ -132,7 +138,8 @@ app.MapPost("api/admin/altaUsr/{myUser}", (DataObjs.Usuario myUser,  GraphServic
                    .AddAsync(user).GetAwaiter().GetResult();
 
 
-        return Results.StatusCode(StatusCodes.Status201Created);
+       // return Results.StatusCode(StatusCodes.Status201Created);
+        return  Results.Ok(user.UserPrincipalName);
     }
     catch (Exception ex)
     {
@@ -144,8 +151,20 @@ app.MapPost("api/admin/altaUsr/{myUser}", (DataObjs.Usuario myUser,  GraphServic
 #region "COURSES"
 #region "GET"
 // Lista los usuarios activos
-app.MapGet("api/course", () =>
+app.MapGet("api/course", ( HttpContext context) =>
 {
+    if (context.User.IsInRole("admin_sec"))
+    {
+        return Results.StatusCode(StatusCodes.Status401Unauthorized);
+    }
+
+    bool isAdmin_sec = context.User.IsInRole("admin_sec");
+    bool isAdmin_plat = context.User.IsInRole("admin_plat");
+    bool isUser = context.User.IsInRole("user");
+    String userName = context.User.Identity.Name;
+
+    string pausa_debug = "";
+
     try
     {
         Logica.CourseOps operaciones = new Logica.CourseOps(builder.Configuration["MyCXSQL.String"]);
@@ -166,8 +185,13 @@ app.MapGet("api/course", () =>
     }
 });
 
-app.MapGet("api/course/{id}", (long  id) =>
+app.MapGet("api/course/{id}", (long  id , HttpContext context) =>
 {
+    if (context.User.IsInRole("admin_sec"))
+    {
+        return Results.StatusCode(StatusCodes.Status401Unauthorized);
+    }
+
     try
     {
         Logica.CourseOps operaciones = new Logica.CourseOps(builder.Configuration["MyCXSQL.String"]);
@@ -191,8 +215,13 @@ app.MapGet("api/course/{id}", (long  id) =>
 
 #region "POST - Alta"
 //Alta 
-app.MapPost("api/course/{course}", (DataObjs.Course course) =>
+app.MapPost("api/course/{course}", (DataObjs.Course course , HttpContext context) =>
 {
+    if (!context.User.IsInRole("admin_plat"))
+    {
+        return Results.StatusCode(StatusCodes.Status401Unauthorized);
+    }
+
     try
     {
         Logica.CourseOps operaciones = new Logica.CourseOps(builder.Configuration["MyCXSQL.String"]);
@@ -213,8 +242,13 @@ app.MapPost("api/course/{course}", (DataObjs.Course course) =>
 #endregion
 
 #region "PUT - Update"
-app.MapPut("api/course/{course}", (DataObjs.Course course) =>
+app.MapPut("api/course/{course}", (DataObjs.Course course , HttpContext context) =>
 {
+    if (!context.User.IsInRole("admin_plat"))
+    {
+        return Results.StatusCode(StatusCodes.Status401Unauthorized);
+    }
+
     try
     {
         Logica.CourseOps operaciones = new Logica.CourseOps(builder.Configuration["MyCXSQL.String"]);
@@ -235,8 +269,13 @@ app.MapPut("api/course/{course}", (DataObjs.Course course) =>
 #endregion
 
 #region "DEL"
-app.MapDelete("api/course/{id}", (long id) =>
+app.MapDelete("api/course/{id}", (long id , HttpContext context) =>
 {
+    if (!context.User.IsInRole("admin_plat"))
+    {
+        return Results.StatusCode(StatusCodes.Status401Unauthorized);
+    }
+
     try
     {
         Logica.CourseOps operaciones = new Logica.CourseOps(builder.Configuration["MyCXSQL.String"]);

@@ -10,9 +10,9 @@
 
 End Class
 Public Enum RolUsuario
-    admin
+    admin_sec
+    admin_plat
     user
-    superadmin
 End Enum
 
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\WebAPI\\WebAPI.csproj": {}
+    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataAxs\\DataAxs.vbproj": {
+    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataAxs\\DataAxs.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataAxs\\DataAxs.vbproj",
+        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataAxs\\DataAxs.vbproj",
         "projectName": "DataAxs",
-        "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataAxs\\DataAxs.vbproj",
+        "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataAxs\\DataAxs.vbproj",
         "packagesPath": "C:\\Users\\ry12633\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataAxs\\obj\\",
+        "outputPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataAxs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj": {
-                "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj"
+              "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataObjs\\DataObjs.vbproj": {
+                "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataObjs\\DataObjs.vbproj"
               }
             }
           }
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj": {
+    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataObjs\\DataObjs.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj",
+        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataObjs\\DataObjs.vbproj",
         "projectName": "DataObjs",
-        "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj",
+        "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataObjs\\DataObjs.vbproj",
         "packagesPath": "C:\\Users\\ry12633\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\obj\\",
+        "outputPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataObjs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -128,14 +128,14 @@
         }
       }
     },
-    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\Logica\\Logica.vbproj": {
+    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\Logica\\Logica.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\Logica\\Logica.vbproj",
+        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\Logica\\Logica.vbproj",
         "projectName": "Logica",
-        "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\Logica\\Logica.vbproj",
+        "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\Logica\\Logica.vbproj",
         "packagesPath": "C:\\Users\\ry12633\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\Logica\\obj\\",
+        "outputPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\Logica\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -155,11 +155,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataAxs\\DataAxs.vbproj": {
-                "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataAxs\\DataAxs.vbproj"
+              "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataAxs\\DataAxs.vbproj": {
+                "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataAxs\\DataAxs.vbproj"
               },
-              "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj": {
-                "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj"
+              "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataObjs\\DataObjs.vbproj": {
+                "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataObjs\\DataObjs.vbproj"
               }
             }
           }
@@ -192,14 +192,14 @@
         }
       }
     },
-    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\WebAPI\\WebAPI.csproj",
+        "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\ry12633\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -219,11 +219,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj": {
-                "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\DataObjs\\DataObjs.vbproj"
+              "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataObjs\\DataObjs.vbproj": {
+                "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\DataObjs\\DataObjs.vbproj"
               },
-              "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\Logica\\Logica.vbproj": {
-                "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2\\Logica\\Logica.vbproj"
+              "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\Logica\\Logica.vbproj": {
+                "projectPath": "C:\\Users\\ry12633\\Desktop\\_Temp\\BackUp V2 _ En progreso\\Logica\\Logica.vbproj"
               }
             }
           }

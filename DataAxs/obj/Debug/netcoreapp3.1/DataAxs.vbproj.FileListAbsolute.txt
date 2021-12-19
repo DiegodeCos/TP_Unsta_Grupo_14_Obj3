@@ -37,3 +37,16 @@ C:\Users\ry12633\Desktop\_Temp\BackUp V2\DataAxs\obj\Debug\netcoreapp3.1\DataAxs
 C:\Users\ry12633\Desktop\_Temp\BackUp V2\DataAxs\obj\Debug\netcoreapp3.1\DataAxs.vbproj.CopyComplete
 C:\Users\ry12633\Desktop\_Temp\BackUp V2\DataAxs\obj\Debug\netcoreapp3.1\DataAxs.dll
 C:\Users\ry12633\Desktop\_Temp\BackUp V2\DataAxs\obj\Debug\netcoreapp3.1\DataAxs.pdb
+C:\Users\ry12633\Desktop\_Temp\BackUp V2 _ En progreso\DataAxs\bin\Debug\netcoreapp3.1\DataAxs.deps.json
+C:\Users\ry12633\Desktop\_Temp\BackUp V2 _ En progreso\DataAxs\bin\Debug\netcoreapp3.1\DataAxs.dll
+C:\Users\ry12633\Desktop\_Temp\BackUp V2 _ En progreso\DataAxs\bin\Debug\netcoreapp3.1\DataAxs.pdb
+C:\Users\ry12633\Desktop\_Temp\BackUp V2 _ En progreso\DataAxs\bin\Debug\netcoreapp3.1\DataObjs.dll
+C:\Users\ry12633\Desktop\_Temp\BackUp V2 _ En progreso\DataAxs\bin\Debug\netcoreapp3.1\DataObjs.pdb
+C:\Users\ry12633\Desktop\_Temp\BackUp V2 _ En progreso\DataAxs\obj\Debug\netcoreapp3.1\DataAxs.vbproj.AssemblyReference.cache
+C:\Users\ry12633\Desktop\_Temp\BackUp V2 _ En progreso\DataAxs\obj\Debug\netcoreapp3.1\DataAxs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ry12633\Desktop\_Temp\BackUp V2 _ En progreso\DataAxs\obj\Debug\netcoreapp3.1\DataAxs.AssemblyInfoInputs.cache
+C:\Users\ry12633\Desktop\_Temp\BackUp V2 _ En progreso\DataAxs\obj\Debug\netcoreapp3.1\DataAxs.AssemblyInfo.vb
+C:\Users\ry12633\Desktop\_Temp\BackUp V2 _ En progreso\DataAxs\obj\Debug\netcoreapp3.1\DataAxs.vbproj.CoreCompileInputs.cache
+C:\Users\ry12633\Desktop\_Temp\BackUp V2 _ En progreso\DataAxs\obj\Debug\netcoreapp3.1\DataAxs.vbproj.CopyComplete
+C:\Users\ry12633\Desktop\_Temp\BackUp V2 _ En progreso\DataAxs\obj\Debug\netcoreapp3.1\DataAxs.dll
+C:\Users\ry12633\Desktop\_Temp\BackUp V2 _ En progreso\DataAxs\obj\Debug\netcoreapp3.1\DataAxs.pdb

@@ -1,39 +1,52 @@
-"# TP_Unsta_Grupo_14_Obj3" 
+# TP_Unsta_Grupo_14_Obj3
 
-Definición de roles 
-Rol	Función
+### Definición de roles 
+
 admin_sec	Administración de Seguridad. Permiso para dar de alta usuarios. No tiene permisos sobre las API Course
+
 admin_plat	Administración de la Plataforma. Permite crear, actualizar y borrar (baja lógica) cursos y consultar un curso específico o listar los cursos que estén activos
+
 user		Usuario. Puede consultar un curso específico o listar los cursos que estén activos.
 
-Matriz de Roles/Funciones
-Alta de Usuario			==>	admin_sec		
+
+### Matriz de Roles/Funciones
+
+Alta de Usuario			==>	admin_sec
+
 Ver datos de un curso	==> admin_plat	user
+
 Listar cursos			==> admin_plat	user
+
 Crear un curso			==>	admin_plat
-Modificar un curso		==>	admin_plat	
-Borrar un curso			==>	admin_plat	
+
+Modificar un curso		==>	admin_plat
+
+Borrar un curso			==>	admin_plat
 
 
 
-Codigos de salida implementados
+### Codigos de salida implementados
 Code	Indicador
+
 200		Openracion correcta
+
 201		Elemento Creado
+
 202		Operacion Aceptada / Para actualizacion de datos
+
 401		Operacion no autorizada
+
 404		No encontrado. Para operaciones de baja o modificacion. ID no registrado
+
 500		Error en la operacion.
 
 
-#######################
-#  Usuario admin_sec  #
-#######################
+
+
+## Usuario admin_sec
 Una vez generado el token con Postman se verificaron las funciones:
 
-
-Alta de Usuario:
-================
+### Alta de Usuario:
 
 curl -X 'POST' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/admin/altaUsr/{myUser}' \
@@ -52,8 +65,7 @@ Code	Details
 200		Response body 
 
 
-Listado de Cursos:
-==================
+### Listado de Cursos:
 
 curl -X 'GET' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/course' \
@@ -63,9 +75,8 @@ curl -X 'GET' \
 Code	Details
 401		Undocumented Error: Unauthorized
 
+### Datos del Curso 1:
 
-Datos del Curso 1:
-==================
 curl -X 'GET' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/course/1' \
   -H 'accept: */*' \
@@ -74,9 +85,7 @@ curl -X 'GET' \
 Code	Details
 401 	Undocumented Error: Unauthorized
 
-
-Borrar curso 5:
-===============
+### Borrar curso 5:
 
 curl -X 'DELETE' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/course/5' \
@@ -87,8 +96,7 @@ Code	Details
 401		Undocumented Error: Unauthorized
 
 
-Agregar de curso:
-=================
+### Agregar de curso:
 
 curl -X 'POST' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/course/{course}' \
@@ -108,8 +116,7 @@ Code	Details
 401		Undocumented Error: Unauthorized
 
 
-Modificar curso 5:
-==================
+### Modificar curso 5:
 
 curl -X 'PUT' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/course/{course}' \
@@ -125,17 +132,13 @@ curl -X 'PUT' \
   "fecha": "2021-12-20T20:57:40.651Z"
 }'
 
-
 Code	Details
 401 	Undocumented Error: Unauthorized
 
 
-########################
-#  Usuario admin_plat  #
-########################
+## Usuario admin_plat
 
-Alta de Usuario:
-================
+### Alta de Usuario:
 
 curl -X 'POST' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/admin/altaUsr/{myUser}' \
@@ -149,9 +152,7 @@ curl -X 'POST' \
   "rol": "user"
 }'
 
-
-Listado de Cursos:
-==================
+### Listado de Cursos:
 
 curl -X 'GET' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/course' \
@@ -239,8 +240,8 @@ Code	Details
 
 
 
-Datos del Curso 1:
-==================
+### Datos del Curso 1:
+
 curl -X 'GET' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/course/1' \
   -H 'accept: */*' \
@@ -260,8 +261,8 @@ Code	Details
 }
 
 
-Borrar curso 5:
-===============
+### Borrar curso 5:
+
 curl -X 'DELETE' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/course/5' \
   -H 'accept: */*' \
@@ -271,8 +272,7 @@ Code	Details
 200		Response headers
 
 
-Agregar de curso:
-=================
+### Agregar de curso:
 
 curl -X 'POST' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/course/{course}' \
@@ -292,9 +292,8 @@ curl -X 'POST' \
 Code	Details
 201		Undocumented Response headers
 
+### Modificar curso 11:
 
-Modificar curso 11:
-==================
 curl -X 'PUT' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/course/{course}' \
   -H 'accept: */*' \
@@ -312,15 +311,10 @@ curl -X 'PUT' \
 Code	Details
 202	Undocumented
 
+##  Usuario usuario     
 
+### Alta de Usuario:
 
-
-########################
-#  Usuario usuario     #
-########################
-
-Alta de Usuario:
-================
 curl -X 'POST' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/admin/altaUsr/{myUser}' \
   -H 'accept: */*' \
@@ -336,10 +330,8 @@ curl -X 'POST' \
 Code	Details
 401		Undocumented	Error: Unauthorized
 
+### Listado de Cursos:
 
-
-Listado de Cursos:
-==================
 curl -X 'GET' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/course' \
   -H 'accept: */*' \
@@ -423,9 +415,8 @@ Code	Details
   }
 ]
 
+### Datos del Curso 1:
 
-Datos del Curso 1:
-==================
 curl -X 'GET' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/course/1' \
   -H 'accept: */*' \
@@ -443,8 +434,8 @@ Code	Details
   "fecha": "2021-12-15T17:57:00"
 }
 
-Borrar curso 5:
-===============
+### Borrar curso 5:
+
 curl -X 'DELETE' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/course/5' \
   -H 'accept: */*' \
@@ -453,10 +444,8 @@ curl -X 'DELETE' \
 Code	Details
 401		Undocumented	Error: Unauthorized
 
+### Agregar de curso:
 
-
-Agregar de curso:
-=================
 curl -X 'POST' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/course/{course}' \
   -H 'accept: */*' \
@@ -471,13 +460,11 @@ curl -X 'POST' \
   "fecha": "2021-12-20T20:55:54.266Z"
 }'
 
-
 Code	Details
 401		Undocumented Error: Unauthorized
 
+### Modificar curso 5:
 
-Modificar curso 5:
-==================
 curl -X 'PUT' \
   'https://unstatpfinalgrupo14.azurewebsites.net/api/course/{course}' \
   -H 'accept: */*' \
@@ -491,7 +478,6 @@ curl -X 'PUT' \
   "activo": true,
   "fecha": "2021-12-20T20:57:40.651Z"
 }'
-
 
 Code	Details
 401		Undocumented Error: Unauthorized
